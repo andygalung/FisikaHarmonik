@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(31, 109, 148, 0.8)), url('../img/bg-hro.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.071);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 900px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, #ffffff, #cccccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: contrast(1.2) brightness(1.1);
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Animasi Fade-in & Slide-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efek Scroll Animasi */
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Efek Aktif saat Scroll */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    background: #FFD700;
+    color: black;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 45px;
+    background: #141E30;
+    color: white;
+    font-size: 14px;
+}
+
+/* Halaman Materi */
+.page-header {
+    background: #243B55;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.materi h2 {
+    color: #243B55;
+    margin-top: 20px;
+}
+
+.materi p, .materi ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.materi ul {
+    padding-left: 20px;
+}
+
+.materi img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol Back */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FFD700;
+    color: #141E30;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.video-container h2 {
+    margin-bottom: 20px; /* Jarak antara judul dan paragraf */
+}
+
+.video-container p {
+    margin-bottom: 40px; /* Jarak antara paragraf dan video */
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.video-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+.page-header {
+    background: #243B55;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.quiz-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.quiz-item h3 {
+    color: #243B55;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk pilihan jawaban */
+.quiz-options {
+    display: flex;
+    flex-direction: column; /* Susun ke bawah */
+    gap: 10px;
+}
+
+.quiz-options label {
+    display: block; /* Agar pilihan berada di bawah satu sama lain */
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.quiz-options label:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 10px; /* Beri sedikit jarak dengan teks jawaban */
+}
+
+
+/* Tombol */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-button {
+    background: #243B55;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.quiz-button:hover {
+    background: #1a2e40;
+}
+
+.quiz-result {
+    background: #FFD700;
+    color: #141E30;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Gerak Harmonik Sederhana</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header class="page-header">
+        <h1>🎯 Kuis Gerak Harmonik Sederhana</h1>
+    </header>
+
+    <main class="content">
+        <section class="quiz-container">
+            <h2>Jawablah pertanyaan berikut:</h2>
+
+            <form id="quizForm">
+                <!-- Soal 1 -->
+                <div class="quiz-item">
+                    <h3>1. Apa yang dimaksud dengan gerak harmonik sederhana?</h3>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> a) Gerak lurus beraturan</label>
+                        <label><input type="radio" name="q1" value="b"> b) Gerak bolak-balik melalui titik keseimbangan</label>
+                        <label><input type="radio" name="q1" value="c"> c) Gerak melingkar</label>
+                        <label><input type="radio" name="q1" value="d"> d) Gerak parabola</label>
+                    </div>
+                </div>
+
+                <!-- Soal 2 -->
+                <div class="quiz-item">
+                    <h3>2. Rumus periode gerak harmonik sederhana pada bandul adalah?</h3>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> a) T = 2π√(k/m)</label>
+                        <label><input type="radio" name="q2" value="b"> b) T = 1/f</label>
+                        <label><input type="radio" name="q2" value="c"> c) T = 2π√(L/g)</label>
+                        <label><input type="radio" name="q2" value="d"> d) T = 2π√(m/k)</label>
+                    </div>
+                </div>
+
+                <!-- Soal 3 -->
+                <div class="quiz-item">
+                    <h3>3. Apa yang mempengaruhi frekuensi ayunan bandul?</h3>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="a"> a) Massa bandul</label>
+                        <label><input type="radio" name="q3" value="b"> b) Amplitudo</label>
+                        <label><input type="radio" name="q3" value="c"> c) Warna tali</label>
+                        <label><input type="radio" name="q3" value="d"> d) Panjang tali</label>
+                    </div>
+                </div>
+
+                <!-- Soal 4 -->
+<div class="quiz-item">
+    <h3>4. Apa yang dimaksud dengan amplitudo dalam gerak harmonik sederhana?</h3>
+    <div class="quiz-options">
+        <label><input type="radio" name="q4" value="a"> a) Jarak antara titik keseimbangan dan posisi maksimum</label>
+        <label><input type="radio" name="q4" value="b"> b) Waktu yang diperlukan untuk satu siklus penuh</label>
+        <label><input type="radio" name="q4" value="c"> c) Kecepatan pada titik keseimbangan</label>
+        <label><input type="radio" name="q4" value="d"> d) Gaya yang bekerja pada benda</label>
+    </div>
+</div>
+
+<!-- Soal 5 -->
+<div class="quiz-item">
+    <h3>5. Gerak harmonik sederhana pada pegas mengikuti hukum?</h3>
+    <div class="quiz-options">
+        <label><input type="radio" name="q5" value="a"> a) Hukum Hooke</label>
+        <label><input type="radio" name="q5" value="b"> b) Hukum Newton</label>
+        <label><input type="radio" name="q5" value="c"> c) Hukum Pascal</label>
+        <label><input type="radio" name="q5" value="d"> d) Hukum Bernoulli</label>
+    </div>
+</div>
+
+<!-- Soal 6 -->
+<div class="quiz-item">
+    <h3>6. Apakah yang dimaksud dengan fase dalam gerak harmonik sederhana?</h3>
+    <div class="quiz-options">
+        <label><input type="radio" name="q6" value="a"> a) Posisi benda pada waktu tertentu dibandingkan dengan titik keseimbangan</label>
+        <label><input type="radio" name="q6" value="b"> b) Perubahan arah gerak benda</label>
+        <label><input type="radio" name="q6" value="c"> c) Jarak yang ditempuh benda</label>
+        <label><input type="radio" name="q6" value="d"> d) Waktu yang diperlukan untuk mencapai amplitudo maksimal</label>
+    </div>
+</div>
+
+
+                
+
+                <div class="button-container">
+                    <input type="submit" value="Kirim Jawaban" class="quiz-button">
+                    <button type="button" id="resetButton" class="quiz-button">Reset</button>
+                </div>
+            </form>
+
+            <div id="quizResult" class="quiz-result" style="display: none;"></div>
+        </section>
+
+        <div class="button-container">
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+        </div>
+    </main>
+</body>
+</html>
